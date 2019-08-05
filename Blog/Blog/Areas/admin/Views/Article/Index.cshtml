@@ -1,0 +1,122 @@
+﻿@model IEnumerable<Blog.Models.ViewModels.ArticleViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Заметки</h2>
+
+<p>
+    <a asp-action="AddPost">Добавить новую</a>
+</p>
+@if (TempData["NotFound"] != null)
+{
+    <div class="alert alert-danger">Запись удалена либо не создана</div>
+}
+@if (TempData["Del"] != null)
+{
+    <div class="alert alert-success">Запись успешно удалена</div>
+}
+@if (!Model.Any())
+{
+    <h2>Посты не созданы</h2>
+}
+else
+{
+    <table class="table sorting" id="articles">
+        <thead>
+            <tr>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Id)
+                    </th>*@
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Title)*@
+                    <h3>Название</h3>
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Slug)*@
+                    <h3>Ссылка</h3>
+                </th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Sorting)
+                    </th>*@
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Urlimg)
+                    </th>*@
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Content)*@
+                    <h3>Отрывок</h3>
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Timepost)*@
+                    <h3>Опубликовано</h3>
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Timepost)*@
+                    <h3>Действия</h3>
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr id="id_@item.Id" class="@item.Slug" title="Потяните чтобы отсортировать">
+
+                    @*<td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Slug)
+                    </td>
+                    @*<td>
+                    @Html.DisplayFor(modelItem => item.Sorting)
+                </td>*@
+                    @*<td>
+                    @Html.DisplayFor(modelItem => item.Urlimg)
+                </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Content)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Timepost)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Изменить", "EditPost", new { id = item.Id }) |
+                        @Html.ActionLink("Предосмотр", "PostDetails", new { id = item.Id }) |
+                        @Html.ActionLink("Удалить", "PostDelete", new { id = item.Id }, new { @class = "delete" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@section Scripts{
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script>
+        $(function () {
+
+            $(".delete").click(function () {
+                if (!confirm("Вы уверенны?")) return false;
+
+
+            });
+            $("table#articles tbody").sortable({
+                //item: "tr:not(.home)",
+                item: "tr",
+                placeholder: "ui-state-heighlight",
+                update: function () {
+                    var ids = $("table#articles tbody").sortable("serialize");
+                    var url = "/admin/Article/RewriteList";
+                    $.post(url, ids, function (data) {
+
+                    })
+                }
+            });
+        });
+    </script>
+    }

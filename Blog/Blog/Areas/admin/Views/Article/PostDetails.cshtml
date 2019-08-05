@@ -1,0 +1,66 @@
+﻿@model Blog.Models.ViewModels.ArticleViewModel
+
+@{
+    ViewData["Title"] = "Предосмотр";
+}
+
+<h2>Предосмотр</h2>
+
+<div>
+    @*<h4>ArticleViewModel</h4>*@
+    <hr />
+    <div class="article">
+        @*<dt>
+                @Html.DisplayNameFor(model => model.Id)
+            </dt>*@
+        @*<dd>
+                @Html.DisplayFor(model => model.Id)
+            </dd>*@
+        @*<dt>
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>*@
+        <div class="header">
+            <h1>@Html.DisplayFor(model => model.Title)</h1>
+        </div>
+        <div class="imgpost">
+            @if (Model.Urlimg != null)
+            {
+                <img src="@Url.Content(Model.Urlimg)" style="width:600px">
+            }
+        </div>
+        @*<dt>
+                @Html.DisplayNameFor(model => model.Slug)
+            </dt>*@
+        @*<dd>
+                @Html.DisplayFor(model => model.Slug)
+            </dd>*@
+        @*<dt>
+                @Html.DisplayNameFor(model => model.Sorting)
+            </dt>*@
+        @*<dd>
+                @Html.DisplayFor(model => model.Sorting)
+            </dd>*@
+        @*<dt>
+                @Html.DisplayNameFor(model => model.Urlimg)
+            </dt>*@
+        @*<dd>
+                @Html.DisplayFor(model => model.Urlimg)
+            </dd>*@
+        @*<dt>
+                @Html.DisplayNameFor(model => model.Content)
+            </dt>*@
+        <div class="content">
+            @Html.DisplayFor(model => model.Content)
+        </div>
+        @*<dt>
+                @Html.DisplayNameFor(model => model.Timepost)
+            </dt>*@
+        <div class="timepost">
+            @Html.DisplayFor(model => model.Timepost)
+        </div>
+    </div>
+</div>
+<div>
+    @Html.ActionLink("Редактировать", "EditPost", new { id = Model.Id }) |
+    <a asp-action="Index">Назад</a>
+</div>

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Blog.Models.Data.Articles>
+
+@{ 
+    ViewData["Title"] = "Статьи";
+}
+
+
+@foreach (var item in Model)
+{
+<div class="post">
+ 
+    <div class="imgpost">
+        @if (item.Urlimg != null)
+        {
+            <img src="@Url.Content(item.Urlimg)" style="width:600px">
+        }
+       
+
+    </div>
+
+    <div class="header">
+        <h1>@Html.DisplayFor(modelItem => item.Title)</h1>
+    </div>
+    
+
+    <div class="content">
+        @Html.DisplayFor(modelItem => item.Content, new { @maxlength = "20" })
+    </div>
+    <div class="timepost">
+        @Html.DisplayFor(modelItem => item.Timepost)
+    </div>
+    <br>
+    <h4>Оставить комментарий</h4>
+    @using (Html.BeginForm("Postcomment", "Blog", FormMethod.Post))
+    {
+        <input id="nametext" type="text" placeholder="e-Mail" name="Mail" /><br>
+        <input type="hidden" name="ArtId" value=@item.Id>
+        <textarea id="comtext" placeholder="Комментарий" name="Comment"></textarea><br>
+        <input type="submit" value="Отправить" class="btn-answer" />
+    }
+
+    @foreach (var commentar in item.coms)
+    {
+        <span id="name">@commentar.Mail написал</span><br>
+        <span id="comment">@commentar.Comment</span><br>
+        <span id="postcomment">@commentar.Timecomment</span>
+        <br>
+    }
+    <br>
+
+    @Html.ActionLink("Читать больше", "Lookpost", new { id = item.Id })
+
+</div>
+    <hr>
+}
+

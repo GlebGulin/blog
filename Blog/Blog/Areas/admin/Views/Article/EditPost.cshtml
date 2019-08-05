@@ -1,0 +1,73 @@
+﻿@model Blog.Models.ViewModels.ArticleViewModel
+
+@{
+    ViewData["Title"] = "EditPost";
+}
+
+<h2>EditPost</h2>
+
+@if (TempData["SM"] != null)
+{
+    <div class="alert alert-success">Изменения успешно внесены</div>
+}
+<h4>ArticleViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditPost">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @*<div class="form-group">
+                    <label asp-for="Id" class="control-label"></label>
+                    <input asp-for="Id" class="form-control" />
+                    <span asp-validation-for="Id" class="text-danger"></span>
+                </div>*@
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Ссылка</label>
+                <input asp-for="Slug" class="form-control" />
+                <span asp-validation-for="Slug" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                    <label asp-for="Sorting" class="control-label"></label>
+                    <input asp-for="Sorting" class="form-control" />
+                    <span asp-validation-for="Sorting" class="text-danger"></span>
+                </div>*@
+            @*<div class="form-group">
+                    <label asp-for="Urlimg" class="control-label"></label>
+                    <input asp-for="Urlimg" class="form-control" />
+                    <span asp-validation-for="Urlimg" class="text-danger"></span>
+                </div>*@
+            <div class="form-group">
+                <label asp-for="Content" class="control-label"></label>
+                <input asp-for="Content" class="form-control" />
+                <span asp-validation-for="Content" class="text-danger"></span>
+            </div>
+            <div class="imgpost">
+                @*<label class="control-label"></label>*@
+                @if (Model.Urlimg != null)
+                {
+                    <img src="@Url.Content(Model.Urlimg)" style="width:600px">
+                }
+            </div>
+            <div class="form-group">
+                <input type="file" name="SomeFileUpdate" />
+            </div>
+
+
+
+            <div class="form-group">
+                <input type="submit" value="Обновить" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
