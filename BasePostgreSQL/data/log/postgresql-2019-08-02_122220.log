@@ -1,0 +1,7 @@
+2019-08-02 12:22:20.472 EEST [2684] LOG:  database system was shut down at 2019-08-02 12:22:18 EEST
+2019-08-02 12:22:20.565 EEST [3880] LOG:  database system is ready to accept connections
+2019-08-02 12:25:19.473 EEST [3880] LOG:  received fast shutdown request
+2019-08-02 12:25:19.566 EEST [3880] LOG:  aborting any active transactions
+2019-08-02 12:25:19.566 EEST [3880] LOG:  worker process: logical replication launcher (PID 3180) exited with exit code 1
+2019-08-02 12:25:19.566 EEST [3060] LOG:  shutting down
+2019-08-02 12:25:19.800 EEST [3880] LOG:  database system is shut down

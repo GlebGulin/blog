@@ -1,0 +1,16 @@
+2019-08-02 12:25:25.931 EEST [3572] LOG:  database system was shut down at 2019-08-02 12:25:19 EEST
+2019-08-02 12:25:25.978 EEST [2684] LOG:  database system is ready to accept connections
+2019-08-02 12:28:19.714 EEST [3396] ERROR:  function pg_last_xlog_receive_location() does not exist at character 283
+2019-08-02 12:28:19.714 EEST [3396] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2019-08-02 12:28:19.714 EEST [3396] STATEMENT:  SELECT usecreatedb, usesuper, CASE WHEN usesuper THEN pg_postmaster_start_time() ELSE NULL END as upsince, CASE WHEN usesuper THEN pg_conf_load_time() ELSE NULL END as confloadedsince, CASE WHEN usesuper THEN pg_is_in_recovery() ELSE NULL END as inrecovery, CASE WHEN usesuper THEN pg_last_xlog_receive_location() ELSE NULL END as receiveloc, CASE WHEN usesuper THEN pg_last_xlog_replay_location() ELSE NULL END as replayloc, CASE WHEN usesuper THEN pg_last_xact_replay_timestamp() ELSE NULL END as replay_timestamp, CASE WHEN usesuper AND pg_is_in_recovery() THEN pg_is_xlog_replay_paused() ELSE NULL END as isreplaypaused
+	  FROM pg_user WHERE usename=current_user
+2019-08-02 12:37:55.317 EEST [3452] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-02 13:02:08.438 EEST [4768] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-02 13:10:06.179 EEST [2684] LOG:  received fast shutdown request
+2019-08-02 13:10:06.257 EEST [2684] LOG:  aborting any active transactions
+2019-08-02 13:10:06.382 EEST [3732] ERROR:  canceling statement due to user request
+2019-08-02 13:10:06.382 EEST [2684] LOG:  worker process: logical replication launcher (PID 3732) exited with exit code 1
+2019-08-02 13:10:06.382 EEST [2484] LOG:  shutting down
+2019-08-02 13:10:07.021 EEST [2684] LOG:  database system is shut down

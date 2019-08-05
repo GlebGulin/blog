@@ -1,0 +1,14 @@
+2019-08-02 13:11:15.812 EEST [1664] LOG:  database system was shut down at 2019-08-02 13:10:06 EEST
+2019-08-02 13:11:15.984 EEST [1524] LOG:  database system is ready to accept connections
+2019-08-02 13:19:20.798 EEST [3516] FATAL:  database "blogdb" does not exist
+2019-08-02 13:19:20.864 EEST [1392] FATAL:  database "blogdb" does not exist
+2019-08-02 13:20:58.249 EEST [4928] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-02 13:20:58.249 EEST [4816] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-02 13:21:07.745 EEST [1524] LOG:  received fast shutdown request
+2019-08-02 13:21:07.760 EEST [1524] LOG:  aborting any active transactions
+2019-08-02 13:21:07.823 EEST [1724] ERROR:  canceling statement due to user request
+2019-08-02 13:21:07.823 EEST [1524] LOG:  worker process: logical replication launcher (PID 1724) exited with exit code 1
+2019-08-02 13:21:07.838 EEST [1684] LOG:  shutting down
+2019-08-02 13:21:09.554 EEST [1524] LOG:  database system is shut down

@@ -1,0 +1,7 @@
+2019-08-02 11:21:29.146 EEST [2000] LOG:  database system was shut down at 2019-07-30 13:03:14 EEST
+2019-08-02 11:21:29.302 EEST [1796] LOG:  database system is ready to accept connections
+2019-08-02 12:22:18.600 EEST [1796] LOG:  received fast shutdown request
+2019-08-02 12:22:18.631 EEST [1796] LOG:  aborting any active transactions
+2019-08-02 12:22:18.646 EEST [1796] LOG:  worker process: logical replication launcher (PID 1048) exited with exit code 1
+2019-08-02 12:22:18.646 EEST [2012] LOG:  shutting down
+2019-08-02 12:22:18.802 EEST [1796] LOG:  database system is shut down

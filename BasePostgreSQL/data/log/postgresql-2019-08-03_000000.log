@@ -1,0 +1,19 @@
+2019-08-03 00:22:15.409 EEST [4412] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 00:48:19.456 EEST [4308] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 01:02:08.158 EEST [4348] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 01:02:08.158 EEST [2400] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 01:02:08.158 EEST [6532] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 01:02:08.158 EEST [4128] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 01:02:08.173 EEST [4360] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 01:02:18.810 EEST [1848] LOG:  received fast shutdown request
+2019-08-03 01:02:18.841 EEST [1848] LOG:  aborting any active transactions
+2019-08-03 01:02:18.872 EEST [1848] LOG:  worker process: logical replication launcher (PID 2000) exited with exit code 1
+2019-08-03 01:02:18.888 EEST [1960] LOG:  shutting down
+2019-08-03 01:02:19.122 EEST [1848] LOG:  database system is shut down

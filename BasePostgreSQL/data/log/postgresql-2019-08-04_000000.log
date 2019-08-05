@@ -1,0 +1,175 @@
+2019-08-04 00:43:59.580 EEST [3436] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 00:44:56.191 EEST [6368] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 00:47:29.356 EEST [7980] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 00:51:23.466 EEST [6252] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 00:53:08.825 EEST [1948] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 00:59:00.743 EEST [4312] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 01:01:52.438 EEST [8084] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 10:45:32.618 EEST [4308] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 10:47:08.200 EEST [2512] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 10:49:58.837 EEST [9724] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 11:06:19.492 EEST [9876] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 11:12:25.943 EEST [8524] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 11:13:46.465 EEST [4712] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 11:41:19.011 EEST [10132] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 11:43:18.856 EEST [7472] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 13:07:37.242 EEST [8456] ERROR:  relation "article" already exists
+2019-08-04 13:07:37.242 EEST [8456] STATEMENT:  CREATE TABLE article (
+	    "Id" serial NOT NULL,
+	    "Title" text NULL,
+	    "Slug" text NULL,
+	    "Sorting" integer NOT NULL,
+	    "Urlimg" text NULL,
+	    "Content" text NULL,
+	    "Timepost" timestamp without time zone NOT NULL,
+	    CONSTRAINT "PK_article" PRIMARY KEY ("Id")
+	)
+2019-08-04 13:11:06.179 EEST [9676] ERROR:  relation "article" already exists
+2019-08-04 13:11:06.179 EEST [9676] STATEMENT:  CREATE TABLE article (
+	    "Id" serial NOT NULL,
+	    "Title" text NULL,
+	    "Slug" text NULL,
+	    "Sorting" integer NOT NULL,
+	    "Urlimg" text NULL,
+	    "Content" text NULL,
+	    "Timepost" timestamp without time zone NOT NULL,
+	    CONSTRAINT "PK_article" PRIMARY KEY ("Id")
+	)
+2019-08-04 13:12:50.639 EEST [348] ERROR:  relation "article" already exists
+2019-08-04 13:12:50.639 EEST [348] STATEMENT:  CREATE TABLE article (
+	    "Id" serial NOT NULL,
+	    "Title" text NULL,
+	    "Slug" text NULL,
+	    "Sorting" integer NOT NULL,
+	    "Urlimg" text NULL,
+	    "Content" text NULL,
+	    "Timepost" timestamp without time zone NOT NULL,
+	    CONSTRAINT "PK_article" PRIMARY KEY ("Id")
+	)
+2019-08-04 13:17:39.650 EEST [7516] ERROR:  relation "article" already exists
+2019-08-04 13:17:39.650 EEST [7516] STATEMENT:  CREATE TABLE article (
+	    "Id" serial NOT NULL,
+	    "Title" text NULL,
+	    "Slug" text NULL,
+	    "Sorting" integer NOT NULL,
+	    "Urlimg" text NULL,
+	    "Content" text NULL,
+	    "Timepost" timestamp without time zone NOT NULL,
+	    CONSTRAINT "PK_article" PRIMARY KEY ("Id")
+	)
+2019-08-04 14:51:54.255 EEST [5264] ERROR:  database "blogdb" is being accessed by other users
+2019-08-04 14:51:54.255 EEST [5264] DETAIL:  There is 1 other session using the database.
+2019-08-04 14:51:54.255 EEST [5264] STATEMENT:  DROP DATABASE blogdb;
+	
+2019-08-04 14:52:08.061 EEST [5264] ERROR:  database "blogdb" is being accessed by other users
+2019-08-04 14:52:08.061 EEST [5264] DETAIL:  There is 1 other session using the database.
+2019-08-04 14:52:08.061 EEST [5264] STATEMENT:  DROP DATABASE blogdb;
+	
+2019-08-04 14:52:13.438 EEST [5264] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 14:52:13.438 EEST [3744] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 14:52:13.438 EEST [1076] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 14:54:00.333 EEST [8064] FATAL:  database "blogdb" does not exist
+2019-08-04 14:54:00.396 EEST [5912] FATAL:  database "blogdb" does not exist
+2019-08-04 16:44:26.337 EEST [9160] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 16:53:55.582 EEST [8632] ERROR:  null value in column "Timecomment" violates not-null constraint
+2019-08-04 16:53:55.582 EEST [8632] DETAIL:  Failing row contains (2, hannahtarri@gmail.com, Hallo noch einmal, 2, null).
+2019-08-04 16:53:55.582 EEST [8632] STATEMENT:  INSERT INTO public.comment (
+	"Comment", "ArticlesId", "Id", "Mail") VALUES (
+	'Hallo noch einmal', '2', '2', 'hannahtarri@gmail.com');
+2019-08-04 16:55:12.205 EEST [8632] ERROR:  null value in column "Comment" violates not-null constraint
+2019-08-04 16:55:12.205 EEST [8632] DETAIL:  Failing row contains (2, hannahtarri@gmail.com, null, 2, 2019-08-04 16:44:21.504035).
+2019-08-04 16:55:12.205 EEST [8632] STATEMENT:  INSERT INTO public.comment (
+	"ArticlesId", "Mail", "Id", "Timecomment") VALUES (
+	'2', 'hannahtarri@gmail.com', '2', '2019-08-04 16:44:21.504035');
+2019-08-04 16:55:31.027 EEST [8632] ERROR:  null value in column "Comment" violates not-null constraint
+2019-08-04 16:55:31.027 EEST [8632] DETAIL:  Failing row contains (2, hannahtarri@gmail.com, null, 2, 2019-08-04 16:44:21).
+2019-08-04 16:55:31.027 EEST [8632] STATEMENT:  INSERT INTO public.comment (
+	"ArticlesId", "Mail", "Id", "Timecomment") VALUES (
+	'2', 'hannahtarri@gmail.com', '2', '2019-08-04 16:44:21');
+2019-08-04 17:43:19.053 EEST [5988] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 17:58:01.052 EEST [9748] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 18:28:42.151 EEST [5432] ERROR:  database "blogdb" is being accessed by other users
+2019-08-04 18:28:42.151 EEST [5432] DETAIL:  There are 5 other sessions using the database.
+2019-08-04 18:28:42.151 EEST [5432] STATEMENT:  DROP DATABASE blogdb;
+	
+2019-08-04 18:30:13.727 EEST [4384] ERROR:  relation "article" already exists
+2019-08-04 18:30:13.727 EEST [4384] STATEMENT:  CREATE TABLE article (
+	    "Id" serial NOT NULL,
+	    "Title" text NULL,
+	    "Slug" text NULL,
+	    "Sorting" integer NOT NULL,
+	    "Urlimg" text NULL,
+	    "Content" text NULL,
+	    "Timepost" timestamp without time zone NOT NULL,
+	    CONSTRAINT "PK_article" PRIMARY KEY ("Id")
+	)
+2019-08-04 18:30:39.169 EEST [5036] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 18:30:39.308 EEST [5432] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 18:30:39.596 EEST [9800] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 18:30:40.718 EEST [7948] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 18:30:41.180 EEST [2096] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 18:30:41.317 EEST [4836] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 18:30:41.483 EEST [2596] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 18:32:38.098 EEST [4352] FATAL:  database "blogdb" does not exist
+2019-08-04 18:32:38.157 EEST [9976] FATAL:  database "blogdb" does not exist
+2019-08-04 18:40:13.941 EEST [5876] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 18:46:24.812 EEST [6764] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 18:46:24.813 EEST [4680] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 20:50:28.862 EEST [3884] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 20:50:28.961 EEST [7172] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 20:50:28.862 EEST [7164] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 20:50:29.491 EEST [5848] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 20:50:30.068 EEST [9448] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 20:51:05.808 EEST [10024] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 21:07:11.720 EEST [932] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 21:19:57.706 EEST [2360] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 21:19:57.706 EEST [8360] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 21:19:57.706 EEST [124] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 21:20:04.243 EEST [6400] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-04 21:21:22.572 EEST [1904] LOG:  received fast shutdown request
+2019-08-04 21:21:23.165 EEST [1904] LOG:  aborting any active transactions
+2019-08-04 21:21:25.661 EEST [1904] LOG:  worker process: logical replication launcher (PID 1400) exited with exit code 1
+2019-08-04 21:21:26.004 EEST [1036] LOG:  shutting down
+2019-08-04 21:21:27.111 EEST [1904] LOG:  database system is shut down

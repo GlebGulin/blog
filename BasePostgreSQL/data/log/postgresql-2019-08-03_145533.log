@@ -1,0 +1,26 @@
+2019-08-03 14:55:33.496 EEST [2024] LOG:  database system was shut down at 2019-08-03 01:02:19 EEST
+2019-08-03 14:55:33.574 EEST [1904] LOG:  database system is ready to accept connections
+2019-08-03 22:56:31.910 EEST [1720] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 23:00:49.427 EEST [7388] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 23:14:52.349 EEST [5716] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 23:19:41.906 EEST [7092] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 23:25:27.276 EEST [7628] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 23:27:10.312 EEST [7216] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 23:28:32.647 EEST [7440] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 23:36:08.849 EEST [7560] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 23:41:21.693 EEST [5972] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 23:45:01.853 EEST [8224] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 23:46:42.522 EEST [3912] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2019-08-03 23:48:04.139 EEST [6768] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
